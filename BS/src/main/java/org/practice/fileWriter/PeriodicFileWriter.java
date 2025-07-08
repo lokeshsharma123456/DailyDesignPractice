@@ -9,11 +9,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class PeriodicFileWriter implements Runnable{
     private final Path filePath;
-    private final AtomicInteger counter = new AtomicInteger();
+    private final AtomicInteger counter = new AtomicInteger();// baad me likhna
     public PeriodicFileWriter(Path finalPath) {
         this.filePath = finalPath;
         try{
-            Files.write(filePath, String.format("This is a header line%n").getBytes(StandardCharsets.UTF_8));
+            Files.write(filePath, String.format("BrowserStack interview header line%n").getBytes(StandardCharsets.UTF_8));
         } catch (final IOException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
