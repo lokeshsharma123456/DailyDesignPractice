@@ -11,6 +11,7 @@
     <modules>
         <module>SingletonPattern</module>
         <module>BS</module>
+        <module>tail-f</module>
     </modules>
 
     <properties>
